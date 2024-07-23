@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+    <div id="table">
+       <div id="time"></div>
+
+
+    </div>
+    <button on click="sw()">Start</button>
+
+    <button on click="watch()">Stop</button>
+    
+</body>
+<script>
+    (`00 hrs:00mins:00secs`)
+    function sw(){
+    let hr=0;
+    let min=0;
+    let sec=0;
+    sec++;
+    if(sec==60){
+        min++;
+        sec=0;
+        if(min==60){
+            hrs++;
+            mins=0;
+        }
+        }
+        document.getElementById("time")=`${hrs}:${mins}:${secs}`
+        
+                
+        }
+</script>
+</html>
